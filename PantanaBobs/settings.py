@@ -55,7 +55,7 @@ ROOT_URLCONF = 'PantanaBobs.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ["PantanaBobs/templates/"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
