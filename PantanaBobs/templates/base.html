@@ -1,7 +1,67 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
+<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Pantana's Pool Hall</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Menu<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Events</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Photo Gallery</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
 {% block page_content %}
 {% endblock %}
+
+<br><br><br>
+
+<footer class="section footer-classic context-dark bg-dark">
+    <div class="container">
+      <div class="row row-30">
+        <div class="col-md-4 col-xl-5">
+          <div class="pr-xl-4">
+            <br>
+            <p>Pantana's Pool Hall</p>
+            <p class="rights"><span>©  </span><span class="copyright-year">2019</span><span> </span><span>Noble</span><span> </span><span>No Rights Reserved...</span></p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <br>
+          <h5>Contact</h5>
+          <dl class="contact-list">
+            <dt>Address:</dt>
+            <dd>3112 Hillsborough Street, Raleigh, NC 27607</dd>
+          </dl>
+          <dl class="contact-list">
+            <dt>phones:</dt>
+            <dd><a href="tel:#">(919)-833-2990</a>
+            </dd>
+          </dl>
+        </div>
+        <div class="col-md-4 col-xl-3">
+          <br>
+          <h5>Links</h5>
+          <ul class="nav-list">
+            <li><a href="{% url 'index' %}">Home</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Photo Gallery</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
