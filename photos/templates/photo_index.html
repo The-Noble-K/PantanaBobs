@@ -6,9 +6,8 @@
 {% for photo in photos %}
     <div class="col-md-4">
         <div class="card mb-2">
-            
             <div class="card-body">
-                <img class="card-img-top" src="{% static photo.image %}" alt="{{photos.name}}">
+                <img class="card-img-top" src="{% static photo.image %}" alt="{{photo.name}}">
             </div>
         </div>
     </div>
